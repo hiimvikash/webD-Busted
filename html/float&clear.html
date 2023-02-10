@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float || clear</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width : 900px;
+            border: 2px solid grey;
+            margin: 33px auto;
+        }
+        .item{
+            border: 2px solid rgb(32, 73, 209);
+            margin : 12px 3px;
+            padding: 12px 3px;
+            background-color: rgb(235, 214, 214);
+        }
+        #fruit{
+            float:left;
+            width : 48%;
+        }
+        #computer{
+            float:right;
+            width : 48%;
+        }
+        #wood{
+            clear:both;
+        }
+        h1{
+            border: 1px solid black;
+            width: 135px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Store</h1>
+        <div id="fruit" class="item">
+            <h2>fruit</h2>
+            <p class="para" id="fruitpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos sint et placeat aut itaque ratione at esse! Aperiam debitis commodi aliquid reiciendis ut in cum, dolorem voluptatum vero asperiores!</p>
+        </div>
+        <div id="computer" class="item">
+            <h2>computer</h2>
+            <p class="para" id="computerpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos sint et placeat aut itaque ratione at esse! Aperiam debitis commodi aliquid reiciendis ut in cum, dolorem voluptatum vero asperiores!</p>
+        </div>
+        <div id="wood" class="item">
+            <h2>wood</h2>
+            <p class="para" id="woodpara">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt eos sint et placeat aut itaque ratione at esse! Aperiam debitis commodi aliquid reiciendis ut in cum, dolorem voluptatum vero asperiores!</p>
+        </div>
+    </div>
+</body>
+</html>

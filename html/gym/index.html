@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- for fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oxygen:wght@300;400&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Oxygen:wght@300;400&family=Pacifico&family=Satisfy&display=swap" rel="stylesheet">
+    <!-- for fonts -->
+
+
+    <style>
+        *{box-sizing: border-box;}
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('gymBG.jpg');
+            height: 1260px;
+            background-attachment:scroll;
+            background-repeat: no-repeat;
+        }
+        img{
+            position: fixed;
+            top : 5px;
+            left : 7px;
+            width : 76px;
+            filter: invert(100%);
+        }
+       
+
+        .right{
+            /* border: 2px solid red; */
+            overflow: auto;
+            
+            position: fixed;
+            right: 10px;
+        }
+        li{
+            list-style: none;
+            float:left;
+            margin : 0px 18px;
+            font-size: large;
+            
+            font-family : 'Oxygen', sans-serif;
+
+        }
+        a{
+            color :rgb(202, 153, 153);
+            text-decoration: none;
+            transition: linear 0.3s;
+        }
+        a:hover{
+            color: aliceblue;
+        }
+
+        #be{
+            position : fixed;
+            font-size: 360px;
+            top : 96px;
+            left : 77px;
+            color: rgb(202, 153, 153);
+        }
+        #fit{
+           display: inline-block;
+            position: absolute;
+            top: 178px;
+            right: 469px;
+            font-size: 138px;
+            color:rgb(187, 167, 171);
+        }
+        #confident{
+            display:inline-block;
+            position: absolute;
+            top: 298px;
+    right: 84px;
+    font-size: 139px;
+    color:rgb(187, 167, 171);
+        }
+        #ready{
+            position : absolute;
+            top: 945px;
+            left: 79px;
+            font-size: 253px;
+            color: aliceblue;
+        }
+        #coming{
+            display: inline-block;
+            position: fixed;
+            bottom: 7px;
+            right: 17px;
+            font-family: 'Satisfy', cursive;
+            font-size: 30px;
+            width: 90px;
+            color: rgb(255, 255, 255);
+        }
+        #announce{
+            display: inline-block;
+            position: absolute;
+            top: 752px;
+            right: 230px;
+            font-family: 'Satisfy', cursive;
+            font-size: 51px;
+            width: 103px;
+            color: rgb(230, 198, 198);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        
+        <img src="https://webstockreview.net/images/clipart-exercise-weight-gym-11.png" alt="">
+        <div class="right">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Camp</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="content">
+        <div id="be">Be</div>
+        <div id="fit">Fit</div>
+        <div id="confident">Confident</div>
+        <div id="ready">Ready</div>
+        <div id="announce">Grand Opening in your city</div>
+        <div id="coming">Coming Soon</div>
+    </div>
+</body>
+</html>

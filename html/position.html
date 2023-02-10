@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>positions</title>
+
+    <style>
+        body{
+            border: 2px solid red;
+            height : 3200px;
+        }
+        .container{
+            border : 2px solid yellow;
+            height: 500px;
+            width : 2500px
+        }
+        .box{
+            display: inline-block;
+            width:150px; height : 150px;
+            border : 2px solid green;
+            /* background-color: beige; */
+        }
+
+        #box3{
+            /*position of element is relative to it's original position so gap will be there*/
+            /* position : relative; 
+            top : 15px;
+            left : 4px; */
+
+            /* position of element is relative to it's browser window */
+            /* position : absolute;
+            left : 0px; 
+            bottom : 5px; */
+
+
+            /* browser window */
+            position : fixed;
+            right : 60px;
+            top : 8px;
+
+        }
+
+        #box4{
+            /* relative to parent */
+            position: sticky;
+            top : 0px; /*this means it jwill maintain the distance of 0px after scrolling*/
+            left : 50px; /* this means it will maintain the distance of 50px after scrolling horizontally*/
+            /* right : 10px; */
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">Fixed</div>
+        <div class="box" id="box4">Sticky</div>
+    </div>
+</body>
+</html>

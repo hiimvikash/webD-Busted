@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payments Form</title>
+    <style>
+        *{
+            background-color: rgb(237, 237, 237);
+        }
+        body{
+            color: rgb(31, 30, 30);
+        }
+    </style>
+</head>
+<body>
+    <a style="text-align: center;" href="page1.html"><p>&#x1F3E0;</p></a>
+    <hr>
+    <form action="">
+    <h1 style="text-align: center;">Payment Form</h1>
+   
+     <fieldset> <!--this is for box -->
+        <legend><h2>Personal Information</h2></legend> <!--this is for inserting text in box line-->
+        <p >First Name : <input type="text" name="fname"required> Last Name : <input type="text" name="lname"required></p>
+        <p>Gender:<br> 
+        Male<input type="radio" name="gender" id="male"required>
+        Female<input type="radio" name="gender" id="female"required>
+        Other<input type="radio" name="gender" id="male"required>
+    </p>
+        <p>Address: <textarea name="address" id="address" cols="80" rows="5" align="center"></textarea></p>
+        <p>Pincode:<input type="number" name="pincode" id="pincode"required></p>
+        <p>Email: <input type="email" name="email" id="email" required></p>
+        <p>Are you Indian: <input type="checkbox" name="Indian"></p>
+        <p>Mobile no:  <select name="countryid" id="countryid">
+            <option value="">---Country code:---</option> 
+            <option value="indian">+91</option> 
+        </select>&nbsp;&nbsp;&nbsp; <input type="number" name="phone" id="phone"required></p>
+    
+</fieldset>
+
+<fieldset>
+    <legend><h2>Payment Information</h2></legend>
+    <p>
+        Card Type:
+        <select name="card_type" id="card_type" required>
+            <option value="">---Select a card type---</option>
+            <option value="visa">Visa</option>
+            <option value="mc">Master Card</option>
+            <option value="rupay">Rupay</option>
+            <option value="usa">American card</option>
+
+        </select>
+    </p>
+    <p>
+        Card Number:<input type="number" name="cn" id="cn" required> 
+    </p>
+    <p>
+        Expiry(Month,Year):<input type="month" name="month" id="month" required>
+    </p>
+    <p> CVV: <input type="password" name="cvv" id="cvv" required></p>
+    <p><input type="submit" value="PAY"></p>
+</fieldset>
+</form>
+   
+</body>
